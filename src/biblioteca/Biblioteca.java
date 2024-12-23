@@ -1,5 +1,6 @@
 package biblioteca;
 
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.ArrayList;
 
 public class Biblioteca {
@@ -25,6 +26,12 @@ public class Biblioteca {
         System.out.println("Lista de Livros");
         for (Livro livro : livros) {
             livro.exibirDetalhes();
+        }
+    }
+    public void listarusuarios() {
+        System.out.println(" Lista de Usuarios ");
+        for (Usuario usuario : usuarios) {
+            usuario.exibirdetalhes();
         }
     }
 
